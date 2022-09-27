@@ -3,10 +3,10 @@ import "./Person.css";
 export default function Person({ person }) {
   const { name, image, status } = person;
   return (
-    <div className={status.toLowerCase()}>
+    <li className={status.toLowerCase()}>
       <h2>{name}</h2>
       <img src={image} alt={name} />
-    </div>
+    </li>
   );
 }
 
@@ -14,7 +14,7 @@ export default function Person({ person }) {
     const { name, image, status } = person;
     console.log(status);
     return (
-      <div
+      <li
         style={{
           backgroundColor:
             status === "unknown" ? "grey" : status === "Alive" ? "red" : "green",
@@ -22,6 +22,6 @@ export default function Person({ person }) {
       >
         <h2>{name}</h2>
         <img src={image} alt={name} />
-      </div>
+      </li>
     );
   } */
