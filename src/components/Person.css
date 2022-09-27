@@ -1,0 +1,11 @@
+.unknown {
+  background-color: rgba(145, 145, 145, 0.5);
+}
+
+.alive {
+  background-color: rgba(10, 245, 14, 0.5);
+}
+
+.dead {
+  background-color: rgba(245, 10, 10, 0.5);
+}
