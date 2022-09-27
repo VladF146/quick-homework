@@ -5,9 +5,11 @@ import Person from "./components/Person";
 function App() {
   return (
     <div className="App">
-      {persons.map((person) => (
-        <Person key={person.id} person={person} />
-      ))}
+      <ul>
+        {persons.map((person) => (
+          <Person key={person.id} person={person} />
+        ))}
+      </ul>
     </div>
   );
 }
